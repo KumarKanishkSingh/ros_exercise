@@ -1,0 +1,32 @@
+[01m[K/home/kanishk/Workspaces/smb_ws/src/smb_common/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:4:35:[m[K [01;31m[Kerror: [m[K‘[01m[KString[m[K’ in namespace ‘[01m[Kstd_msgs[m[K’ does not name a type
+    4 | void scanCallback(const std_msgs::[01;31m[KString[m[K& msg)
+      |                                   [01;31m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/kanishk/Workspaces/smb_ws/src/smb_common/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:1[m[K:
+[01m[K/home/kanishk/Workspaces/smb_ws/src/smb_common/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:[m[K In function ‘[01m[Kvoid scanCallback(const int&)[m[K’:
+[01m[K/home/kanishk/Workspaces/smb_ws/src/smb_common/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:6:31:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kdata[m[K’ in ‘[01m[Kmsg[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+    6 | ROS_INFO("I heard: [%s]", msg.[01;31m[Kdata[m[K.c_str());
+      |                               [01;31m[K^~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  110 | #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/kanishk/Workspaces/smb_ws/src/smb_common/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:6:1:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+    6 | [01;36m[KROS_INFO[m[K("I heard: [%s]", msg.data.c_str());
+      | [01;36m[K^~~~~~~~[m[K
+[01m[K/home/kanishk/Workspaces/smb_ws/src/smb_common/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/kanishk/Workspaces/smb_ws/src/smb_common/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:13:66:[m[K [01;31m[Kerror: [m[K‘[01m[KscansCallback[m[K’ was not declared in this scope; did you mean ‘[01m[KscanCallback[m[K’?
+   13 |   ros::Subscriber subscriber = nodeHandle.subscribe("/scan", 10, [01;31m[KscansCallback[m[K);
+      |                                                                  [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                                                  [32m[KscanCallback[m[K
+make[2]: *** [CMakeFiles/smb_highlevel_controller.dir/build.make:76: CMakeFiles/smb_highlevel_controller.dir/src/smb_highlevel_controller_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:163: CMakeFiles/smb_highlevel_controller.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2
