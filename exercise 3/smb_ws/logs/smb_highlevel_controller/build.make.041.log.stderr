@@ -1,0 +1,34 @@
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:59:19:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Kparameter[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+   59 | void scanCallback([01;31m[Kconst[m[K );
+      |                   [01;31m[K^~~~~[m[K
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:[m[K In function ‘[01m[Kvoid scanCallback(const ConstPtr&)[m[K’:
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:181:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmain[m[K’ is not a class, namespace, or enumeration
+  181 |     [01;31m[Kmain[m[K::publisher.publish(move);
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:190:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmain[m[K’ is not a class, namespace, or enumeration
+  190 |     [01;31m[Kmain[m[K::publisher.publish(move);
+      |     [01;31m[K^~~~[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/serialization.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/publisher.h:34[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/node_handle.h:32[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:2[m[K:
+/opt/ros/noetic/include/ros/message_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::message_traits::MD5Sum<M>::value() [with M = int][m[K’:
+[01m[K/opt/ros/noetic/include/ros/message_traits.h:227:102:[m[K   required from ‘[01m[Kconst char* ros::message_traits::md5sum() [with M = int][m[K’
+[01m[K/opt/ros/noetic/include/ros/subscribe_options.h:89:49:[m[K   required from ‘[01m[Kvoid ros::SubscribeOptions::initByFullCallbackType(const string&, uint32_t, const boost::function<void(P)>&, const boost::function<boost::shared_ptr<typename ros::ParameterAdapter<P>::Message>()>&) [with P = int; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int; typename ros::ParameterAdapter<P>::Message = int][m[K’
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:659:5:[m[K   required from ‘[01m[Kros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(M), const ros::TransportHints&) [with M = int; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int][m[K’
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:129:78:[m[K   required from here
+[01m[K/opt/ros/noetic/include/ros/message_traits.h:120:28:[m[K [01;31m[Kerror: [m[K‘[01m[K__s_getMD5Sum[m[K’ is not a member of ‘[01m[Kint[m[K’
+  120 |     return [01;31m[KM::__s_getMD5Sum()[m[K.c_str();
+      |            [01;31m[K~~~~~~~~~~~~~~~~^~[m[K
+/opt/ros/noetic/include/ros/message_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::message_traits::DataType<M>::value() [with M = int][m[K’:
+[01m[K/opt/ros/noetic/include/ros/message_traits.h:236:104:[m[K   required from ‘[01m[Kconst char* ros::message_traits::datatype() [with M = int][m[K’
+[01m[K/opt/ros/noetic/include/ros/subscribe_options.h:90:53:[m[K   required from ‘[01m[Kvoid ros::SubscribeOptions::initByFullCallbackType(const string&, uint32_t, const boost::function<void(P)>&, const boost::function<boost::shared_ptr<typename ros::ParameterAdapter<P>::Message>()>&) [with P = int; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int; typename ros::ParameterAdapter<P>::Message = int][m[K’
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:659:5:[m[K   required from ‘[01m[Kros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(M), const ros::TransportHints&) [with M = int; std::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int][m[K’
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:129:78:[m[K   required from here
+[01m[K/opt/ros/noetic/include/ros/message_traits.h:137:30:[m[K [01;31m[Kerror: [m[K‘[01m[K__s_getDataType[m[K’ is not a member of ‘[01m[Kint[m[K’
+  137 |     return [01;31m[KM::__s_getDataType()[m[K.c_str();
+      |            [01;31m[K~~~~~~~~~~~~~~~~~~^~[m[K
+make[2]: *** [CMakeFiles/smb_highlevel_controller.dir/build.make:76: CMakeFiles/smb_highlevel_controller.dir/src/smb_highlevel_controller_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:163: CMakeFiles/smb_highlevel_controller.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2
