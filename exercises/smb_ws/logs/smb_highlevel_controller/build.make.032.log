@@ -1,0 +1,21 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/smb_highlevel_controller.dir/src/smb_highlevel_controller_node.cpp.o[0m
+[01m[K/home/kanishk/Workspaces/smb_ws/src/smb_common/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:6:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ does not name a type
+    6 | void scanCallback(const [01;31m[Ksensor_msgs[m[K::LaserScan::ConstPtr& msg)
+      |                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/kanishk/Workspaces/smb_ws/src/smb_common/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:6:47:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+    6 | void scanCallback(const sensor_msgs::LaserScan[01;31m[K::[m[KConstPtr& msg)
+      |                                               [01;31m[K^~[m[K
+[01m[K/home/kanishk/Workspaces/smb_ws/src/smb_common/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:6:47:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+    6 | void scanCallback[34m[K([m[Kconst sensor_msgs::LaserScan[01;31m[K:[m[K[32m[K:[m[KConstPtr& msg)
+      |                  [34m[K~[m[K                            [01;31m[K^[m[K[32m[K~[m[K
+      |                                               [32m[K)[m[K
+[01m[K/home/kanishk/Workspaces/smb_ws/src/smb_common/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:6:47:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+    6 | void scanCallback(const sensor_msgs::LaserScan[01;31m[K::[m[KConstPtr& msg)
+      |                                               [01;31m[K^~[m[K
+[01m[K/home/kanishk/Workspaces/smb_ws/src/smb_common/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/kanishk/Workspaces/smb_ws/src/smb_common/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:15:66:[m[K [01;31m[Kerror: [m[K‘[01m[KscanCallback[m[K’ was not declared in this scope
+   15 |   ros::Subscriber subscriber = nodeHandle.subscribe("/scan", 50, [01;31m[KscanCallback[m[K);
+      |                                                                  [01;31m[K^~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/smb_highlevel_controller.dir/build.make:76: CMakeFiles/smb_highlevel_controller.dir/src/smb_highlevel_controller_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:163: CMakeFiles/smb_highlevel_controller.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

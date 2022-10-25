@@ -1097,4 +1097,6 @@ CMakeFiles/smb_highlevel_controller.dir/src/smb_highlevel_controller_node.cpp.o:
  /opt/ros/noetic/include/ros/node_handle.h \
  /home/kanishk/Workspaces/smb_ws/src/smb_common/smb_highlevel_controller/include/smb_highlevel_controller/SmbHighlevelController.hpp \
  /opt/ros/noetic/include/std_msgs/String.h \
- /opt/ros/noetic/include/ros/message_operations.h
+ /opt/ros/noetic/include/ros/message_operations.h \
+ /opt/ros/noetic/include/sensor_msgs/LaserScan.h \
+ /opt/ros/noetic/include/std_msgs/Header.h
