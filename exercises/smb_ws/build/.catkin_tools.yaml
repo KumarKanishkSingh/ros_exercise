@@ -1,6 +1,0 @@
-devel_space: /home/kanishk/Workspaces/smb_ws/devel
-install: false
-install_space: /home/kanishk/Workspaces/smb_ws/install
-profile: default
-source_space: /home/kanishk/Workspaces/smb_ws/src
-workspace: /home/kanishk/Workspaces/smb_ws

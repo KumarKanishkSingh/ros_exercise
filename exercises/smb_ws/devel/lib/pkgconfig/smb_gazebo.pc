@@ -1,1 +1,0 @@
-/home/kanishk/Workspaces/smb_ws/devel/.private/smb_gazebo/lib/pkgconfig/smb_gazebo.pc

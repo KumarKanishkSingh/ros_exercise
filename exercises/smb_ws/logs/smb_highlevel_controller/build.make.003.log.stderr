@@ -1,7 +1,0 @@
-[01m[K/home/kanishk/Workspaces/smb_ws/src/smb_common/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
-[01m[K/home/kanishk/Workspaces/smb_ws/src/smb_common/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:8:66:[m[K [01;31m[Kerror: [m[K‘[01m[KCallback[m[K’ was not declared in this scope
-    8 |   ros::Subscriber subscriber = nodeHandle.subscribe("/scan", 10, [01;31m[KCallback[m[K);
-      |                                                                  [01;31m[K^~~~~~~~[m[K
-make[2]: *** [CMakeFiles/smb_highlevel_controller.dir/build.make:76: CMakeFiles/smb_highlevel_controller.dir/src/smb_highlevel_controller_node.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:163: CMakeFiles/smb_highlevel_controller.dir/all] Error 2
-make: *** [Makefile:146: all] Error 2
