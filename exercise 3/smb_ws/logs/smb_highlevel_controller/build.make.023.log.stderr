@@ -1,0 +1,21 @@
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:88:28:[m[K [01;31m[Kerror: [m[Kexpected identifier before string constant
+   88 | ros::NodeHandle nodeHandle([01;31m[K"~"[m[K);
+      |                            [01;31m[K^~~[m[K
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:88:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before string constant
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:91:73:[m[K [01;31m[Kerror: [m[K‘[01m[KnodeHandle[m[K’ is not a type
+   91 | smb_highlevel_controller::SmbHighlevelController smbHighlevelController([01;31m[KnodeHandle[m[K);
+      |                                                                         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:95:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+   95 | }
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:[m[K In constructor ‘[01m[Kcontroller::controller()[m[K’:
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:16:20:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kros::NodeHandle controller::nodeHandle(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   16 |       subscriber = [01;31m[KnodeHandle[m[K.subscribe("/scan", 50, scanCallback);
+      |                    [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:17:19:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kros::NodeHandle controller::nodeHandle(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   17 |       publisher = [01;31m[KnodeHandle[m[K.advertise<geometry_msgs::Twist>("/cmd_vel", 50);
+      |                   [01;31m[K^~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/smb_highlevel_controller.dir/build.make:76: CMakeFiles/smb_highlevel_controller.dir/src/smb_highlevel_controller_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:163: CMakeFiles/smb_highlevel_controller.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2
