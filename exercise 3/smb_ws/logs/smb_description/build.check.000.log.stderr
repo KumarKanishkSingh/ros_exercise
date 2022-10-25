@@ -1,0 +1,3 @@
+CMake Error: The source directory "/home/kanishk/Ws/smb_ws/src/smb_common/smb_description" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.
+make: *** [Makefile:1276: cmake_check_build_system] Error 1

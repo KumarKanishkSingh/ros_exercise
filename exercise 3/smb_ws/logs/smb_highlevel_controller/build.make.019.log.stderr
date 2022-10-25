@@ -1,0 +1,32 @@
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:53:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+   53 | }
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:[m[K In constructor ‘[01m[Kcontroller::controller()[m[K’:
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:16:7:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscriber[m[K’ was not declared in this scope
+   16 |       [01;31m[Ksubscriber[m[K = nodeHandle.subscribe("/scan", 50, scanCallback);
+      |       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:16:20:[m[K [01;31m[Kerror: [m[K‘[01m[KnodeHandle[m[K’ was not declared in this scope
+   16 |       subscriber = [01;31m[KnodeHandle[m[K.subscribe("/scan", 50, scanCallback);
+      |                    [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:17:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher[m[K’ was not declared in this scope
+   17 |       [01;31m[Kpublisher[m[K = nodeHandle.advertise<geometry_msgs::Twist>("/cmd_vel", 50);
+      |       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:17:60:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   17 |       publisher = nodeHandle.advertise<geometry_msgs::Twist[01;31m[K>[m[K("/cmd_vel", 50);
+      |                                                            [01;31m[K^[m[K
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:[m[K In member function ‘[01m[Kvoid controller::scanCallback(const ConstPtr&)[m[K’:
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:49:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher[m[K’ was not declared in this scope
+   49 |   [01;31m[Kpublisher[m[K.publish(move);
+      |   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:[m[K In function ‘[01m[Kvoid scanCallback(const ConstPtr&)[m[K’:
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:85:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kprivate[m[K’
+   85 | [01;31m[Kprivate[m[K:
+      | [01;31m[K^~~~~~~[m[K
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:114:75:[m[K [01;31m[Kerror: [m[K‘[01m[KnodeHandle[m[K’ was not declared in this scope
+  114 |   smb_highlevel_controller::SmbHighlevelController smbHighlevelController([01;31m[KnodeHandle[m[K);
+      |                                                                           [01;31m[K^~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/smb_highlevel_controller.dir/build.make:76: CMakeFiles/smb_highlevel_controller.dir/src/smb_highlevel_controller_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:163: CMakeFiles/smb_highlevel_controller.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

@@ -1,0 +1,3 @@
+subscriber:
+  name: "/scan"
+  queue size: 10

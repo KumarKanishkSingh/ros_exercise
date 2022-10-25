@@ -1,0 +1,7 @@
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:35:7:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kgeometry_msgs::Twist[m[K’ {aka ‘[01m[Kgeometry_msgs::Twist_<std::allocator<void> >[m[K’}
+   35 |   move[01;31m[K->[m[Klinear->x =10;
+      |       [01;31m[K^~[m[K
+make[2]: *** [CMakeFiles/smb_highlevel_controller.dir/build.make:76: CMakeFiles/smb_highlevel_controller.dir/src/smb_highlevel_controller_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:163: CMakeFiles/smb_highlevel_controller.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

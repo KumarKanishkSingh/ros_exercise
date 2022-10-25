@@ -1,0 +1,8 @@
+prefix=/home/kanishk/Ws/smb_ws/devel/.private/smb_highlevel_controller
+
+Name: smb_highlevel_controller
+Description: Description of smb_highlevel_controller
+Version: 0.1.0
+Cflags: -I/home/kanishk/Ws/smb_ws/src/smb_common_v2/smb_highlevel_controller/include
+Libs: -L${prefix}/lib 
+Requires: roscpp sensor_msgs
